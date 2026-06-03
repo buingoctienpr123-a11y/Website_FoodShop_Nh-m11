@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #f8f8f8;
+}
+
+/* Layout */
+.admin-layout{
+    min-height: 100vh;
+}
+
+/* Sidebar cố định */
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+    z-index: 1000;
+}
+
+.menu-item{
+    width: 210px;
+    height: 48px;
+    margin: 0 auto 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+    background: #000;
+}
+
+.menu-item.active,
+.menu-item:hover{
+    background: #2E9E5B;
+}
+
+.logout{
+    position: absolute;
+    bottom: 30px;
+    width: 210px;
+    height: 48px;
+    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logout.active,
+.logout:hover{
+    background: #2E9E5B;
+}
+
+/* Main content */
+.main-content{
+    margin-left: 240px;
+    min-height: 100vh;
+}
+
+/* Header */
+.admin-header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    height: 86px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+}
+
+.admin-header h1{
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.admin-header h1 span{
+    color: #2E9E5B;
+}
+
+.admin-info{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.admin-info i{
+    font-size: 18px;
+}
+
+.admin-info img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.admin-info h4{
+    font-size: 16px;
+}
+
+.admin-info p{
+    font-size: 12px;
+    color: #777;
+}
+
+/* Dashboard */
+.dashboard{
+    max-width: 1180px;
+    margin: 45px auto;
+}
+
+/* Statistic cards */
+.stat-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
+.stat-card{
+    height: 130px;
+    background: #fff;
+    border: 1px solid #DADDE3;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 25px;
+}
+
+.stat-card i{
+    font-size: 42px;
+}
+
+.green{
+    color: #2E9E5B;
+}
+
+.yellow{
+    color: #C9AA2B;
+}
+
+.purple{
+    color: #B445D9;
+}
+
+.blue{
+    color: #3896B5;
+}
+
+.stat-card h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.stat-card strong{
+    font-size: 28px;
+}
+
+/* Charts */
+.chart-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.chart-card{
+    height: 300px;
+    background: #fff;
+    border: 1px solid #DADDE3;
+    border-radius: 8px;
+    padding: 18px;
+}
+
+.chart-card h3{
+    margin-bottom: 12px;
+}
+
+.chart-card canvas{
+    width: 100% !important;
+    height: 230px !important;
+}
+
+/* Orders */
+.order-section{
+    margin-top: 35px;
+}
+
+.order-section h3{
+    margin-bottom: 20px;
+}
+
+table{
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+    border: 1px solid #DADDE3;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead{
+    border-bottom: 1px solid #DADDE3;
+}
+
+th,
+td{
+    padding: 18px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.success{
+    color: #2E9E5B;
+}
+
+.danger{
+    color: red;
+}
+
+.blue-text{
+    color: #0066FF;
+}

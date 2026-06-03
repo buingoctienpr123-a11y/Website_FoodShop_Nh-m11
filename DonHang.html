@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản trị viên</title>
+    <link rel="stylesheet" href="css/donhang.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="admin-layout">
+    <aside class="sidebar">
+        <div class="menu-item" data-page="Dashboard.html">Dashboard</div>
+        <div class="menu-item active" data-page="DonHang.html">Đơn hàng</div>
+        <div class="menu-item" data-page="SanPham.html">Sản phẩm</div>
+        <div class="menu-item" data-page="KhachHang.html">Khách hàng</div>
+        <div class="menu-item" data-page="ThongKe.html">Thống kê</div>
+        <div class="menu-item" data-page="CaiDat.html">Cài đặt</div>
+        <div class="logout" id="logout">Đăng xuất</div>
+    </aside>
+
+    <main class="main-content">
+        <header class="admin-header">
+            <h1>Food<span>Shop</span></h1>
+
+            <div class="admin-info">
+                <i class="fa-regular fa-bell"></i>
+                <img src="images/avatar.jpg" alt="Admin">
+                <div>
+                    <h4>Admin</h4>
+                    <p>Quản trị viên</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="order-page">
+            <h2>Danh sách đơn hàng</h2>
+            <div class="filter-tabs">
+                <button class="active">Tất cả</button>
+                <button>Chờ xác nhận</button>
+                <button>Đang giao</button>
+                <button>Đã giao</button>
+                <button>Đã hủy</button>
+            </div>
+
+            <input
+                type="text"
+                class="search-order"
+                placeholder="Tìm kiếm đơn hàng">
+
+            <div class="order-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mã đơn hàng</th>
+                            <th>Khách hàng</th>
+                            <th>Ngày đặt</th>
+                            <th>Tổng tiền</th>
+                            <th>Trạng thái</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>DH001</td>
+                            <td>Nguyễn Văn A</td>
+                            <td>25/5/2026</td>
+                            <td>500.000đ</td>
+                            <td class="success">Đã giao</td>
+                            <td><button class="view-btn">Xem</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>DH002</td>
+                            <td>Nguyễn Văn B</td>
+                            <td>26/5/2026</td>
+                            <td>200.000đ</td>
+                            <td class="danger">Đã hủy</td>
+                            <td><button class="view-btn">Xem</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>DH003</td>
+                            <td>Nguyễn Văn C</td>
+                            <td>26/5/2026</td>
+                            <td>450.000đ</td>
+                            <td class="success">Đã giao</td>
+                            <td><button class="view-btn">Xem</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>DH004</td>
+                            <td>Nguyễn Văn D</td>
+                            <td>27/5/2026</td>
+                            <td>240.000đ</td>
+                            <td class="blue-text">Đang giao</td>
+                            <td><button class="view-btn">Xem</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    </div>
+<script src="JS/sidebar.js"></script>
+</body>
+</html>

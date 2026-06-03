@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="css/thanhtoan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>      
+        <h1>Food<span>Shop</span></h1>
+    </header>
+
+    <main>
+        <section class="header-main">
+            <div><img src="images/icons8-home-30 (1).png" alt=""></div>
+            <div><a href="Main_User.html">Trang chủ</a></div>
+            <div><i class="fa-solid fa-chevron-right"></i></div>
+            <div><a href="GioHang.html">Giỏ hàng</a></div>
+            <div><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="title">Thanh toán</div>
+        </section>
+        <Section class="thanh-toan">
+            <div class="checkout-title"><H1>Thông tin đặt hàng</H1></div>
+            <div class="content">
+                    <div class="left">
+                        <h2>1. Thông tin khách hàng</h2>
+                        <div class="row">
+                            <input type="text" placeholder="Họ và tên">
+                            <input type="text" placeholder="Số điện thoại">
+                        </div>
+                        <input class="full" type="email" placeholder="Email">
+                        <h2>2. Địa chỉ giao hàng</h2>
+                        <div class="row-address">
+                            <input type="text" placeholder="Tỉnh / Thành phố">
+                            <input type="text" placeholder="Quận / Huyện">
+                            <input type="text" placeholder="Phường / Xã">
+                        </div>
+                        <input class="full" type="text" placeholder="Địa chỉ chi tiết">
+                        <h2>3. Ghi chú cho đơn hàng</h2>
+                        <textarea placeholder="Ghi chú"></textarea>
+                        <button class="back-btn" id="backCartBtn">
+                            Quay lại giỏ hàng
+                        </button>
+                    </div>
+                    <div class="right">
+                        <h2>Đơn hàng của bạn</h2>
+                        <div class="product-item">
+                            <img src="images/caca.jpg">
+                            <p>Coca Cola</p>
+                            <span>x1</span>
+                            <strong>20.000đ</strong>
+                        </div>
+                        <div class="product-item">
+                            <img src="images/Pizza_cheese.jpg">
+                            <p>Pizza phô mai</p>
+                            <span>x1</span>
+                            <strong>120.000đ</strong>
+                        </div>
+                        <div class="product-item">
+                            <img src="images/mì_sốt_cheese.jpg">
+                            <p>Mỳ sốt kem</p>
+                            <span>x1</span>
+                            <strong>59.000đ</strong>
+                        </div>
+                        <hr>
+                        <div class="bill">
+                            <span>Tạm tính</span>
+                            <strong>199.000đ</strong>
+                        </div>
+                        <div class="bill">
+                            <span>Phí giao hàng</span>
+                            <strong>20.000đ</strong>
+                        </div>
+                        <div class="bill">
+                            <span>Giảm giá</span>
+                            <strong>20.000đ</strong>
+                        </div>
+                        <h3>Phương thức thanh toán</h3>
+                        <div class="payment-method">
+                            <label>
+                                <input type="radio" name="payment">
+                                COD
+                            </label>
+                            <label>
+                                <input type="radio" name="payment">
+                                Chuyển khoản
+                            </label>
+                        </div>
+                        <div class="total">
+                            <span>Tổng thanh toán</span>
+                            <strong>199.000đ</strong>
+                        </div>
+                        <button class="pay-btn">
+                            Thanh toán
+                        </button>
+                    </div>
+            </div>
+        </Section>
+    </main>
+
+    <footer id="lien-he" class="footer">
+        <div class="footer-top">
+
+            <!-- Cột 1 -->
+            <div class="footer-col">
+                <h2 class="logo">Food<span>Shop</span></h2>
+
+                <p>
+                    Mang đến những món ăn ngon, chất lượng
+                    và an toàn đến tận tay bạn.
+                </p>
+
+                <p>
+                    FoodShop - ăn ngon, sống khỏe!
+                </p>
+
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <!-- Cột 2 -->
+            <div class="footer-col">
+                <h3>LIÊN KẾT NHANH</h3>
+
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Khuyến mãi</a></li>
+                    <li><a href="#">Combo siêu tiết kiệm</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+
+            <!-- Cột 3 -->
+            <div class="footer-col">
+                <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+
+                <ul>
+                    <li>Chính sách đổi trả</li>
+                    <li>Chính sách giao hàng</li>
+                    <li>Hướng dẫn sử dụng</li>
+                    <li>Hình thức thanh toán</li>
+                    <li>Câu hỏi thường gặp</li>
+                </ul>
+            </div>
+
+            <!-- Cột 4 -->
+            <div class="footer-col">
+                <h3>THÔNG TIN LIÊN HỆ</h3>
+
+                <ul>
+                    <li>02 Nguyễn Đình Chiểu, Nha Trang</li>
+                    <li>0987 654 321</li>
+                    <li>support@foodshop.vn</li>
+                    <li>08:00 - 22:00</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2024 FoodShop. All rights reserved.
+        </div>
+    </footer>
+    <script src="JS/giohang.js"></script>
+</body>
+</html>

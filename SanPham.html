@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản trị viên</title>
+    <link rel="stylesheet" href="css/sanpham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="admin-layout">
+    <aside class="sidebar">
+        <div class="menu-item" data-page="Dashboard.html">Dashboard</div>
+        <div class="menu-item" data-page="DonHang.html">Đơn hàng</div>
+        <div class="menu-item active" data-page="SanPham.html">Sản phẩm</div>
+        <div class="menu-item" data-page="KhachHang.html">Khách hàng</div>
+        <div class="menu-item" data-page="ThongKe.html">Thống kê</div>
+        <div class="menu-item" data-page="CaiDat.html">Cài đặt</div>
+        <div class="logout" id="logout">Đăng xuất</div>
+    </aside>
+
+    <main class="main-content">
+        <header class="admin-header">
+            <h1>Food<span>Shop</span></h1>
+
+            <div class="admin-info">
+                <i class="fa-regular fa-bell"></i>
+                <img src="images/avatar.jpg" alt="Admin">
+                <div>
+                    <h4>Admin</h4>
+                    <p>Quản trị viên</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="product-page">
+            <div class="product-top">
+                <h2>Danh sách sản phẩm</h2>
+                <button class="add-product-btn" id="addProductBtn">
+                    <i class="fa-solid fa-plus"></i>
+                    Thêm sản phẩm
+                </button>
+            </div>
+
+            <input
+                type="text"
+                class="search-product"
+                placeholder="Tìm kiếm đơn hàng">
+
+            <div class="product-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ảnh</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Danh mục</th>
+                            <th>Giá</th>
+                            <th>Trạng thái</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="images/gà_quay_nguyên_con.jpg" alt="">
+                            </td>
+                            <td>Gà quay nguyên con</td>
+                            <td>Gà & Tacos</td>
+                            <td>100.000đ</td>
+                            <td class="success">Đang bán</td>
+                            <td>
+                                <button class="edit-btn" id="updateProductBtn">Sửa</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="images/Pizza_cheese.jpg" alt="">
+                            </td>
+                            <td>Pizza phô mai</td>
+                            <td>Pizza</td>
+                            <td>100.000đ</td>
+                            <td class="success">Đang bán</td>
+                            <td>
+                                <button class="edit-btn" id="updateProductBtn">Sửa</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="images/mì_sốt_cheese.jpg" alt="">
+                            </td>
+                            <td>Mì sốt kem</td>
+                            <td>Mì</td>
+                            <td>100.000đ</td>
+                            <td class="success">Đang bán</td>
+                            <td>
+                                <button class="edit-btn" id="updateProductBtn">Sửa</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="images/salad_nga.jpg" alt="">
+                            </td>
+                            <td>Rau củ trộn</td>
+                            <td>Salad</td>
+                            <td>100.000đ</td>
+                            <td class="danger">Đã ẩn</td>
+                            <td>
+                                <button class="edit-btn" id="updateProductBtn">Sửa</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+    </main>
+    </div>
+<script src="JS/sidebar.js"></script>
+<script src="JS/sanpham.js"></script>
+</body>
+</html>

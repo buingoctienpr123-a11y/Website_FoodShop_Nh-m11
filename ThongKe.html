@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản trị viên</title>
+    <link rel="stylesheet" href="css/thongke.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="admin-layout">
+    <aside class="sidebar">
+        <div class="menu-item" data-page="Dashboard.html">Dashboard</div>
+        <div class="menu-item" data-page="DonHang.html">Đơn hàng</div>
+        <div class="menu-item" data-page="SanPham.html">Sản phẩm</div>
+        <div class="menu-item" data-page="KhachHang.html">Khách hàng</div>
+        <div class="menu-item active" data-page="ThongKe.html">Thống kê</div>
+        <div class="menu-item" data-page="CaiDat.html">Cài đặt</div>
+        <div class="logout" id="logout">Đăng xuất</div>
+    </aside>
+    <main class="main-content">
+        <header class="admin-header">
+            <h1>Food<span>Shop</span></h1>
+
+            <div class="admin-info">
+                <i class="fa-regular fa-bell"></i>
+                <img src="images/avatar.jpg" alt="Admin">
+                <div>
+                    <h4>Admin</h4>
+                    <p>Quản trị viên</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="revenue-page">
+            <div class="revenue-header">
+                <h1>Thống kê doanh thu</h1>
+                <select class="time-filter">
+                    <option>7 ngày qua</option>
+                    <option>30 ngày qua</option>
+                    <option>Tháng này</option>
+                    <option>Năm nay</option>
+                </select>
+            </div>
+
+            <div class="revenue-cards">
+                <div class="revenue-card">
+                    <h3>Tổng doanh thu</h3>
+                    <strong class="green">0đ</strong>
+                </div>
+
+                <div class="revenue-card">
+                    <h3>Tổng đơn hàng</h3>
+                    <strong>0</strong>
+                </div>
+
+                <div class="revenue-card">
+                    <h3>Đơn hàng thành công</h3>
+                    <strong>0</strong>
+                </div>
+
+                <div class="revenue-card">
+                    <h3>Đơn hàng hủy</h3>
+                    <strong class="red">0</strong>
+                </div>
+            </div>
+
+            <div class="revenue-chart-row">
+
+                <div class="revenue-chart-card">
+                    <h3>Biểu đồ doanh thu</h3>
+                    <canvas id="revenueBarChart"></canvas>
+                </div>
+
+                <div class="revenue-chart-card category-chart">
+                    <h3>Doanh thu theo danh mục</h3>
+                    <canvas id="categoryDonutChart"></canvas>
+                </div>
+
+            </div>
+
+        </section>
+        
+    </main>
+    
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="JS/thongke.js"></script>
+<script src="JS/sidebar.js"></script>
+<script src="JS/khachhang.js"></script>
+</body>
+</html>

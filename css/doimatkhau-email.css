@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 87px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display:flex;
+    align-items:center;
+    padding-left:60px;
+}
+
+header span{
+    color: #27935D;
+}
+
+.datlaimk-banner{
+    position: relative;
+    width: 100%;
+    height: 934px;
+    margin-top: 87px;
+    overflow: hidden;
+}
+
+.datlaimk-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Form đăng nhập */
+.datlaimk-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    padding: 40px 50px;
+    border-radius: 12px;
+    background-color: rgba(255,255,255,0.5);
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.datlaimk-box p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.datlaimk-box h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 34px;
+}
+
+.datlaimk-box form{
+    display: flex;
+    flex-direction: column;
+}
+
+.datlaimk-box label{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.datlaimk-box input{
+    width: 100%;
+    height: 55px;
+    border: 1px solid #2E9E5B;
+    border-radius: 8px;
+    padding: 0 20px;
+    font-size: 16px;
+    margin-top: 34px;
+    outline: none;
+}
+
+.datlaimk-box input:focus{
+    border: 2px solid #2E9E5B;
+}
+
+/* Nút tiếp theo */
+.datlaimk-btn{
+    width: 300px;
+    height: 50px;
+    margin: 25px auto;
+    border: none;
+    border-radius: 10px;
+    background: #2E9E5B;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 34px;
+}
+
+.datlaimk-btn:hover{
+    background: #257D4A;
+    transform: translateY(-2px);
+}
+
+
+
+
+
+/* Footer */
+.footer{
+    background: #2E9E5B;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-top{
+    max-width: 1400px;
+    margin: auto;
+
+    padding: 50px 60px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-col{
+    flex: 1;
+}
+
+.logo{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.footer span{
+    color: #CFFF04;
+}
+
+.footer-col h3{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.footer-col p{
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.footer-col ul{
+    list-style: none;
+}
+
+.footer-col ul li{
+    margin-bottom: 15px;
+}
+
+.footer-col ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-col ul li a:hover{
+    color: #CFFF04;
+}
+
+.social{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social a{
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+    background: white;
+    color: #2E9E5B;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    font-size: 20px;
+
+    transition: 0.3s;
+}
+
+.social a:hover{
+    transform: translateY(-3px);
+}
+
+
+.footer-bottom{
+    text-align: center;
+    padding: 20px;
+
+    background: #257D4A;
+
+    font-size: 14px;
+}

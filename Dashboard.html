@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản trị viên</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="admin-layout">
+    <aside class="sidebar">
+        <div class="menu-item active" data-page="Dashboard.html">Dashboard</div>
+        <div class="menu-item" data-page="DonHang.html">Đơn hàng</div>
+        <div class="menu-item" data-page="SanPham.html">Sản phẩm</div>
+        <div class="menu-item" data-page="KhachHang.html">Khách hàng</div>
+        <div class="menu-item" data-page="ThongKe.html">Thống kê</div>
+        <div class="menu-item" data-page="CaiDat.html">Cài đặt</div>
+        <div class="logout" id="logout">Đăng xuất</div>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="admin-header">
+            <h1>Food<span>Shop</span></h1>
+
+            <div class="admin-info">
+                <i class="fa-regular fa-bell"></i>
+                <img src="images/avatar.jpg" alt="Admin">
+                <div>
+                    <h4>Admin</h4>
+                    <p>Quản trị viên</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="dashboard">
+
+            <div class="stat-list">
+
+                <div class="stat-card">
+                    <i class="fa-solid fa-bag-shopping green"></i>
+                    <div>
+                        <h3>Tổng doanh thu</h3>
+                        <strong>0đ</strong>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <i class="fa-solid fa-cart-shopping yellow"></i>
+                    <div>
+                        <h3>Đơn hàng</h3>
+                        <strong>0</strong>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <i class="fa-solid fa-users purple"></i>
+                    <div>
+                        <h3>Khách hàng</h3>
+                        <strong>0</strong>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <i class="fa-solid fa-bag-shopping blue"></i>
+                    <div>
+                        <h3>Sản phẩm</h3>
+                        <strong>0</strong>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="chart-row">
+
+                <div class="chart-card">
+                    <h3>Doanh thu (7 ngày qua)</h3>
+                    <canvas id="revenueChart"></canvas>
+                </div>
+
+                <div class="chart-card">
+                    <h3>Đơn hàng (7 ngày qua)</h3>
+                    <canvas id="orderChart"></canvas>
+                </div>
+
+            </div>
+
+            <div class="order-section">
+                <h3>Đơn hàng mới nhất</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mã đơn hàng</th>
+                            <th>Khách hàng</th>
+                            <th>Ngày đặt</th>
+                            <th>Tổng tiền</th>
+                            <th>Trạng thái</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>DH001</td>
+                            <td>Nguyễn Văn A</td>
+                            <td>25/5/2026</td>
+                            <td>500.000đ</td>
+                            <td class="success">Đã giao</td>
+                        </tr>
+
+                        <tr>
+                            <td>DH002</td>
+                            <td>Nguyễn Văn B</td>
+                            <td>26/5/2026</td>
+                            <td>200.000đ</td>
+                            <td class="danger">Đã hủy</td>
+                        </tr>
+
+                        <tr>
+                            <td>DH003</td>
+                            <td>Nguyễn Văn C</td>
+                            <td>27/5/2026</td>
+                            <td>450.000đ</td>
+                            <td class="success">Đã giao</td>
+                        </tr>
+
+                        <tr>
+                            <td>DH004</td>
+                            <td>Nguyễn Văn D</td>
+                            <td>28/5/2026</td>
+                            <td>240.000đ</td>
+                            <td class="blue-text">Đang giao</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="JS/admin.js"></script>
+<script src="JS/sidebar.js"></script>
+</body>
+</html>

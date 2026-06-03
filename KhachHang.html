@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản trị viên</title>
+    <link rel="stylesheet" href="css/khachhang.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="admin-layout">
+    <aside class="sidebar">
+        <div class="menu-item" data-page="Dashboard.html">Dashboard</div>
+        <div class="menu-item" data-page="DonHang.html">Đơn hàng</div>
+        <div class="menu-item" data-page="SanPham.html">Sản phẩm</div>
+        <div class="menu-item active" data-page="KhachHang.html">Khách hàng</div>
+        <div class="menu-item" data-page="ThongKe.html">Thống kê</div>
+        <div class="menu-item" data-page="CaiDat.html">Cài đặt</div>
+        <div class="logout" id="logout">Đăng xuất</div>
+    </aside>
+
+    <main class="main-content">
+        <header class="admin-header">
+            <h1>Food<span>Shop</span></h1>
+
+            <div class="admin-info">
+                <i class="fa-regular fa-bell"></i>
+                <img src="images/avatar.jpg" alt="Admin">
+                <div>
+                    <h4>Admin</h4>
+                    <p>Quản trị viên</p>
+                </div>
+            </div>
+        </header>
+        <section class="customer-page">
+            <h1 class="customer-title">
+                Danh sách khách hàng
+            </h1>
+            <input
+                type="text"
+                class="search-customer"
+                placeholder="Tìm kiếm đơn hàng">
+
+            <div class="customer-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Khách hàng</th>
+                            <th>Số điện thoại</th>
+                            <th>Email</th>
+                            <th>Tổng đơn</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Nguyễn Văn A</td>
+                            <td>0123456789</td>
+                            <td>abc@gmail.com</td>
+                            <td>500.000đ</td>
+                            <td>
+                                <button class="view-btn" onclick="window.location.href='ChiTietDonHang.html'">
+                                    Xem
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Nguyễn Văn B</td>
+                            <td>0123456789</td>
+                            <td>abc@gmail.com</td>
+                            <td>500.000đ</td>
+                            <td>
+                                <button class="view-btn" onclick="window.location.href='ChiTietDonHang.html'">
+                                    Xem
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Nguyễn Văn C</td>
+                            <td>0123456789</td>
+                            <td>abc@gmail.com</td>
+                            <td>500.000đ</td>
+                            <td>
+                                <button class="view-btn" onclick="window.location.href='ChiTietDonHang.html'">
+                                    Xem
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Nguyễn Văn D</td>
+                            <td>0123456789</td>
+                            <td>abc@gmail.com</td>
+                            <td>500.000đ</td>
+                            <td>
+                                <button class="view-btn" onclick="window.location.href='ChiTietDonHang.html'">
+                                    Xem
+                                </button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    </div>
+<script src="JS/sidebar.js"></script>
+<script src="JS/khachhang.js"></script>
+</body>
+</html>

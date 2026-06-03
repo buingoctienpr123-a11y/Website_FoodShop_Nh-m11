@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodShop</title>
+    <link rel="stylesheet" href="css/main_user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><H1><a href="#"></a>Food<span>Shop</span></a></H1></div>
+            <nav class="menu">
+                <a href="#">Trang chủ</a>
+                <a href="#best-seller">Best Seller</a>
+                <a href="#thuc-don">Thực đơn</a>
+                <a href="#review">Review</a>
+                <a href="#lien-he">Liên hệ</a>
+            </nav>
+            <div class="header-icon">
+                <div class="user-menu">  
+                    <button class="user" id="userBtn"><img src="images/icons8-user-30.png" alt=""></button>
+                    <div class="user-dropdown" id="userDropdown">
+                    <!-- JS sẽ render nội dung ở đây -->
+                        
+
+                    </div>
+                </div>  
+                <button class="giohang" id="giohang"><img src="images/icons8-shopping-cart-30.png" alt=""></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <img src="images/background.jpg" alt=""> 
+            <h1>Chào mừng bạn đến với FoodShop</h1>
+        </section>
+        <section id="best-seller" class="best-seller">
+            <div  class="Title"><h1>Best Seller</h1></div>
+            <div class="content">
+            <div class="slider-control">
+                <button class="slider-btn"></button>
+                <button class="slider-btn active"></button>
+            </div>
+            <div class="product-list">
+
+            <div class="product-card" >
+                <img src="images/Pizza_cheese.jpg" alt="Pizza phô mai">
+                <h3>Pizza phô mai</h3>
+                <div class="product-bottom">
+                    <span class="price">100.000 vnđ</span>
+                    <button class="add-btn">Thêm</button>
+                </div>
+            </div>
+            <div class="product-card" >
+                <img src="images/thịt_gà.jpg" alt="Gà nướng">
+                <h3>Gà nướng</h3>
+                <div class="product-bottom">
+                    <span class="price">100.000 vnđ</span>
+                    <button class="add-btn">Thêm</button>
+                </div>
+            </div>
+
+            <div class="product-card" >
+                <img src="images/mì_sốt_cheese.jpg" alt="Mỳ sốt kem">
+
+                <h3>Mỳ sốt kem</h3>
+
+                <div class="product-bottom">
+                    <span class="price">100.000 vnđ</span>
+                    <button class="add-btn">Thêm</button>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="thuc-don" class="thuc-don">
+            <div  class="thuc-don-title"><h1>Thực đơn</h1></div>
+            <div class="product">
+            <div class="product-card" >
+                <img src="images/Pizza_cheese.jpg" alt="">
+                <h3>Pizza phô mai</h3>
+                <div class="product-bottom">
+                    <span class="price">100.000 vnđ</span>
+                    <button class="add-btn">Thêm</button>
+                </div>
+            </div>
+            <div class="product-card" >
+                <img src="images/thịt_gà.jpg" alt="">
+                <h3>Gà nướng</h3>
+                <div class="product-bottom">
+                    <span class="price">100.000 vnđ</span>
+                    <button class="add-btn">Thêm</button>
+                </div>
+            </div>
+            <div class="product-card" >
+                <img src="images/mì_sốt_cheese.jpg" alt="">
+                <h3>Mì sốt kem</h3>
+                <div class="product-bottom">
+                    <span class="price">100.000 vnđ</span>
+                    <button class="add-btn">Thêm</button>
+                </div>
+            </div>
+            <div class="product-card" >
+                <img src="images/cơm_chiên.jpg" alt="">
+                <h3>Cơm chiên dương châu</h3>
+                <div class="product-bottom">
+                    <span class="price">100.000 vnđ</span>
+                    <button class="add-btn">Thêm</button>
+                </div>
+            </div>
+            <div class="product-card" >
+                <img src="images/đùi_gà_nướng_sốt_tỏi_ớt.jpg" alt="">
+                <h3>Đùi gà nướng</h3>
+                <div class="product-bottom">
+                    <span class="price">100.000 vnđ</span>
+                    <button class="add-btn">Thêm</button>
+                </div>
+            </div>
+            <div class="product-card" >
+                <img src="images/Tacos.jpg" alt="">
+                <h3>Barrito</h3>
+                <div class="product-bottom">
+                    <span class="price">100.000 vnđ</span>
+                    <button class="add-btn">Thêm</button>
+                </div>
+            </div>
+            </div>
+            <div class="more" onclick="window.location.href='ThucDon.html'">
+                <button>Xem thêm</button>
+            </div>
+        </section>
+
+        <section class="review-page" id="review">
+
+            <h1 class="review-title">Đánh giá khách hàng</h1>
+            <p class="review-subtitle">
+                Những phản hồi từ người dùng FoodShop
+            </p>
+
+            <!-- Tổng quan đánh giá -->
+            <div class="review-summary">
+
+                <div class="rating-box">
+                    <h2>4.8<span>/5</span></h2>
+                    <div class="stars">★★★★★</div>
+                    <p>1.200+ đánh giá</p>
+                    <small>Đánh giá xác thực</small>
+                </div>
+
+                <div class="rating-bars">
+                    <div class="bar-item">
+                        <span>5★</span>
+                        <div class="bar"><div style="width:80%"></div></div>
+                        <p>80%</p>
+                    </div>
+
+                    <div class="bar-item">
+                        <span>4★</span>
+                        <div class="bar"><div style="width:15%"></div></div>
+                        <p>15%</p>
+                    </div>
+
+                    <div class="bar-item">
+                        <span>3★</span>
+                        <div class="bar"><div style="width:5%"></div></div>
+                        <p>5%</p>
+                    </div>
+
+                    <div class="bar-item">
+                        <span>2★</span>
+                        <div class="bar"><div style="width:0%"></div></div>
+                        <p>0%</p>
+                    </div>
+
+                    <div class="bar-item">
+                        <span>1★</span>
+                        <div class="bar"><div style="width:0%"></div></div>
+                        <p>0%</p>
+                    </div>
+                </div>
+
+                <div class="review-stats">
+                    <p>😊 <strong>98%</strong> Khách hàng hài lòng</p>
+                    <p>🚚 <strong>1.2k+</strong> Đánh giá</p>
+                    <p>⏱ <strong>98%</strong> Giao hàng đúng hẹn</p>
+                </div>
+
+            </div>
+
+            <!-- Filter -->
+            <div class="review-filter">
+                <button class="active">Tất cả</button>
+                <button>5★</button>
+                <button>4★</button>
+                <button>3★</button>
+                <button>2★</button>
+                <button>1★</button>
+                <button>Có ảnh</button>
+            </div>
+
+            <div class="review-content">
+
+                <!-- Danh sách review -->
+                <div class="review-list">
+
+                    <div class="review-card">
+                        <div class="review-user">
+                            <div class="avatar">👤</div>
+                            <div>
+                                <h3>Nguyễn Văn An</h3>
+                                <span>2 ngày trước</span>
+                            </div>
+                            <label>Đã mua hàng</label>
+                        </div>
+
+                        <div class="stars small">★★★★★</div>
+
+                        <p>
+                            Đồ ăn ngon, giao nhanh, đóng gói rất sạch sẽ.
+                            Sẽ ủng hộ tiếp!
+                        </p>
+
+                        <div class="review-images">
+                            <img src="images/Pizza_cheese.jpg" alt="">
+                            <img src="images/cơm_chiên.jpg" alt="">
+                            <img src="images/7up.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-user">
+                            <div class="avatar">👤</div>
+                            <div>
+                                <h3>Trần Minh Đức</h3>
+                                <span>2 ngày trước</span>
+                            </div>
+                            <label>Đã mua hàng</label>
+                        </div>
+
+                        <div class="stars small">★★★★★</div>
+
+                        <p>
+                            Món ăn tươi ngon, nhân viên giao hàng thân thiện.
+                        </p>
+
+                        <div class="review-images">
+                            <img src="images/mì_sốt_cheese.jpg" alt="">
+                            <img src="images/đùi_gà_nướng_sốt_tỏi_ớt.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-user">
+                            <div class="avatar">👤</div>
+                            <div>
+                                <h3>Bùi Ngọc Tiến</h3>
+                                <span>1 ngày trước</span>
+                            </div>
+                            <label>Đã mua hàng</label>
+                        </div>
+
+                        <div class="stars small">★★★★★</div>
+
+                        <p>
+                            Đặt món nhiều lần ở FoodShop rồi, chất lượng rất ổn.
+                        </p>
+
+                        <div class="review-images">
+                            <img src="images/tacos_vỏ_giòn.jpg" alt="">
+                            <img src="images/rau_trộn.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Form viết đánh giá -->
+                <div class="write-review">
+                    <h3>Viết đánh giá</h3>
+                    <p>Chia sẻ trải nghiệm của bạn với FoodShop</p>
+
+                    <label>Chọn số sao *</label>
+                    <div class="choose-stars">☆ ☆ ☆ ☆ ☆</div>
+
+                    <label>Nội dung đánh giá *</label>
+                    <textarea placeholder="Nhập đánh giá của bạn tại đây"></textarea>
+
+                    <label>Thêm ảnh</label>
+                    <div class="upload-box">
+                        <i class="fa-regular fa-image"></i>
+                        <p>Nhấn để tải ảnh hoặc kéo thả vào đây</p>
+                    </div>
+
+                    <button>Gửi đánh giá</button>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <footer id="lien-he" class="footer">
+        <div class="footer-top">
+
+            <!-- Cột 1 -->
+            <div class="footer-col">
+                <h2 class="logo">Food<span>Shop</span></h2>
+
+                <p>
+                    Mang đến những món ăn ngon, chất lượng
+                    và an toàn đến tận tay bạn.
+                </p>
+
+                <p>
+                    FoodShop - ăn ngon, sống khỏe!
+                </p>
+
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <!-- Cột 2 -->
+            <div class="footer-col">
+                <h3>LIÊN KẾT NHANH</h3>
+
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Khuyến mãi</a></li>
+                    <li><a href="#">Combo siêu tiết kiệm</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+
+            <!-- Cột 3 -->
+            <div class="footer-col">
+                <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+
+                <ul>
+                    <li>Chính sách đổi trả</li>
+                    <li>Chính sách giao hàng</li>
+                    <li>Hướng dẫn sử dụng</li>
+                    <li>Hình thức thanh toán</li>
+                    <li>Câu hỏi thường gặp</li>
+                </ul>
+            </div>
+
+            <!-- Cột 4 -->
+            <div class="footer-col">
+                <h3>THÔNG TIN LIÊN HỆ</h3>
+
+                <ul>
+                    <li>02 Nguyễn Đình Chiểu, Nha Trang</li>
+                    <li>0987 654 321</li>
+                    <li>support@foodshop.vn</li>
+                    <li>08:00 - 22:00</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2024 FoodShop. All rights reserved.
+        </div>
+    </footer>
+    <script src="JS/main_user.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #f8f8f8;
+}
+
+/* Layout */
+.admin-layout{
+    min-height: 100vh;
+}
+
+/* Sidebar cố định */
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+    z-index: 1000;
+}
+
+.menu-item{
+    width: 210px;
+    height: 48px;
+    margin: 0 auto 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-item.active,
+.menu-item:hover{
+    background: #2E9E5B;
+}
+
+.logout{
+    position: absolute;
+    bottom: 30px;
+    width: 210px;
+    height: 48px;
+    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logout.active,
+.logout:hover{
+    background: #2E9E5B;
+}
+
+/* Main content */
+.main-content{
+    margin-left: 240px;
+    min-height: 100vh;
+}
+
+/* Header */
+.admin-header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    height: 86px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+}
+
+.admin-header h1{
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.admin-header h1 span{
+    color: #2E9E5B;
+}
+
+.admin-info{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.admin-info i{
+    font-size: 18px;
+}
+
+.admin-info img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.admin-info h4{
+    font-size: 16px;
+}
+
+.admin-info p{
+    font-size: 12px;
+    color: #777;
+}
+
+/* Cài đặt */
+.setting-page{
+    padding: 32px;
+}
+
+.setting-title{
+    font-size: 32px;
+    font-weight: 700;
+    color: #27935D;
+    margin-bottom: 24px;
+}
+
+.setting-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.setting-card{
+    background: #fff;
+    border: 2px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.setting-card h3{
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.form-group{
+    margin-bottom: 18px;
+}
+
+.form-group label{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group input{
+    width: 100%;
+    height: 44px;
+    border: 2px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 0 14px;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-group input:focus{
+    border-color: #27935D;
+}
+
+.save-setting-btn{
+    margin-top: 24px;
+    width: 180px;
+    height: 44px;
+    border: none;
+    border-radius: 10px;
+    background: #27935D;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(39, 147, 93, 0.2);
+}
+
+/* Hover */
+.save-setting-btn:hover{
+    background: #22804f;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(39, 147, 93, 0.35);
+}
+
+/* Click */
+.save-setting-btn:active{
+    transform: scale(0.96);
+    box-shadow: 0 2px 8px rgba(39, 147, 93, 0.2);
+}

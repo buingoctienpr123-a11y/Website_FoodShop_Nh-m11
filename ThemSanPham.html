@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm sản phẩm</title>
+    <link rel="stylesheet" href="css/themsanpham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>Food<span>Shop</span></h1>
+    </header>
+    <main>
+        <section class="add-product-page">
+
+            <button class="back-btn" id="backProductBtn">
+                Quay lại
+            </button>
+
+            <h2>Thêm sản phẩm</h2>
+
+            <div class="add-product-content">
+
+                <div class="image-box">
+                    <h3>Ảnh sản phẩm</h3>
+                    <div class="image-preview" id="imagePreview"></div>
+                        <label for="productImage" class="choose-img-btn">
+                            Chọn ảnh
+                        </label>
+
+                        <input
+                            type="file"
+                            id="productImage"
+                            accept="image/*"
+                            hidden>
+                    </div>
+
+                <form class="product-form" id="addProductForm">
+
+                    <div class="form-group">
+                        <label>Tên sản phẩm :</label>
+                        <input type="text" id="productName">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Danh mục :</label>
+                        <select id="productCategory">
+                            <option value="">Chọn danh mục</option>
+                            <option value="Pizza">Pizza</option>
+                            <option value="Mì">Mì</option>
+                            <option value="Gà & Tacos">Gà & Tacos</option>
+                            <option value="Salad">Salad</option>
+                            <option value="Đồ uống">Đồ uống</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Giá :</label>
+                        <input type="number" id="productPrice">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Trạng thái :</label>
+                        <select id="productStatus">
+                            <option value="Đang bán">Đang bán</option>
+                            <option value="Đã ẩn">Đã ẩn</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mô tả :</label>
+                        <textarea id="productDescription"></textarea>
+                    </div>
+
+                    <button type="submit" class="save-btn">
+                        Lưu sản phẩm
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+<script src="JS/sanpham1.js"></script>
+</body>
+</html>

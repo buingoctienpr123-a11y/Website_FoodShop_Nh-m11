@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #f8f8f8;
+}
+
+/* Layout */
+.admin-layout{
+    min-height: 100vh;
+}
+
+/* Sidebar cố định */
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+    z-index: 1000;
+}
+
+.menu-item{
+    width: 210px;
+    height: 48px;
+    margin: 0 auto 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-item.active,
+.menu-item:hover{
+    background: #2E9E5B;
+}
+
+.logout{
+    position: absolute;
+    bottom: 30px;
+    width: 210px;
+    height: 48px;
+    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logout.active,
+.logout:hover{
+    background: #2E9E5B;
+}
+
+/* Main content */
+.main-content{
+    margin-left: 240px;
+    min-height: 100vh;
+}
+
+/* Header */
+.admin-header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    height: 86px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+}
+
+.admin-header h1{
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.admin-header h1 span{
+    color: #2E9E5B;
+}
+
+.admin-info{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.admin-info i{
+    font-size: 18px;
+}
+
+.admin-info img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.admin-info h4{
+    font-size: 16px;
+}
+
+.admin-info p{
+    font-size: 12px;
+    color: #777;
+}
+
+/* Danh sách khách hàng */
+.customer-page{
+    padding: 32px;
+}
+
+.customer-title{
+    font-size: 32px;
+    font-weight: 700;
+    color: #27935D;
+    margin-bottom: 16px;
+}
+
+.search-customer{
+    width: 520px;
+    height: 40px;
+    padding: 0 16px;
+    border: 2px solid #E5E7EB;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.search-customer:focus{
+    border-color: #27935D;
+}
+
+.customer-table{
+    width: 100%;
+    min-height: 530px;
+    border: 2px solid #E5E7EB;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.customer-table table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.customer-table thead tr{
+    border-bottom: 2px solid #E5E7EB;
+}
+
+.customer-table th{
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.customer-table td{
+    height: 54px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.customer-table th:nth-child(1),
+.customer-table td:nth-child(1){
+    width: 240px;
+    padding-left: 24px;
+}
+
+.customer-table th:nth-child(2),
+.customer-table td:nth-child(2){
+    width: 180px;
+}
+
+.customer-table th:nth-child(3),
+.customer-table td:nth-child(3){
+    width: 280px;
+}
+
+.customer-table th:nth-child(4),
+.customer-table td:nth-child(4){
+    width: 160px;
+}
+
+.customer-table th:nth-child(5),
+.customer-table td:nth-child(5){
+    width: 120px;
+    text-align: center;
+}
+
+.view-btn{
+    width: 78px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    background: #27935D;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.view-btn:hover{
+    background: #1f764b;
+    transform: translateY(-2px);
+}

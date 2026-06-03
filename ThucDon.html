@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực đơn</title>
+    <link rel="stylesheet" href="css/thucdon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>      
+        <div class="container">
+            <div class="logo"><H1><a href="#"></a>Food<span>Shop</span></a></H1></div>
+            <div class="search-box">
+                <input
+                    type="text"
+                    placeholder="Tìm kiếm ngay">
+            </div>
+            <div class="header-icon">
+                <button class="giohang" id="giohang"><img src="images/icons8-shopping-cart-30.png" alt=""></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="header-main">
+            <div><img src="images/icons8-home-30 (1).png" alt=""></div>
+            <div><a href="Main_User.html">Trang chủ</a></div>
+            <div><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="title">Thực đơn</div>
+        </section>
+        <section class="menu-food-page">
+            <div class="category-tabs">
+                <button class="active">Cơm</button>
+                <button onclick="location.href='ThucDonMi.html'">Mì</button>
+                <button onclick="location.href='ThucDonPizza.html'">Pizza</button>
+                <button onclick="location.href='ThucDonGaTacos.html'">Gà & Tacos</button>
+                <button onclick="location.href='ThucDonSalad.html'">Salad</button>
+                <button onclick="location.href='ThucDonNuoc.html'">Nước</button>
+            </div>
+
+            <div class="food-list">
+                <div class="food-card">
+                    <img src="images/cơm_chiên.jpg" alt="Cơm chiên dương châu">
+
+                    <h3>Cơm chiên dương châu</h3>
+
+                    <div class="food-bottom">
+                        <span>100.000 vnđ</span>
+                        <button>Thêm</button>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="images/Cơm_Trắng_Gà.jpg" alt="Cơm gà luộc">
+
+                    <h3>Cơm gà luộc</h3>
+
+                    <div class="food-bottom">
+                        <span>100.000 vnđ</span>
+                        <button>Thêm</button>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="images/cơm_trộn_hàn.jpg" alt="Cơm trộn hàn quốc">
+
+                    <h3>Cơm trộn hàn quốc</h3>
+
+                    <div class="food-bottom">
+                        <span>100.000 vnđ</span>
+                        <button>Thêm</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="lien-he" class="footer">
+        <div class="footer-top">
+
+            <!-- Cột 1 -->
+            <div class="footer-col">
+                <h2 class="logo">Food<span>Shop</span></h2>
+
+                <p>
+                    Mang đến những món ăn ngon, chất lượng
+                    và an toàn đến tận tay bạn.
+                </p>
+
+                <p>
+                    FoodShop - ăn ngon, sống khỏe!
+                </p>
+
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <!-- Cột 2 -->
+            <div class="footer-col">
+                <h3>LIÊN KẾT NHANH</h3>
+
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Khuyến mãi</a></li>
+                    <li><a href="#">Combo siêu tiết kiệm</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+
+            <!-- Cột 3 -->
+            <div class="footer-col">
+                <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+
+                <ul>
+                    <li>Chính sách đổi trả</li>
+                    <li>Chính sách giao hàng</li>
+                    <li>Hướng dẫn sử dụng</li>
+                    <li>Hình thức thanh toán</li>
+                    <li>Câu hỏi thường gặp</li>
+                </ul>
+            </div>
+
+            <!-- Cột 4 -->
+            <div class="footer-col">
+                <h3>THÔNG TIN LIÊN HỆ</h3>
+
+                <ul>
+                    <li>02 Nguyễn Đình Chiểu, Nha Trang</li>
+                    <li>0987 654 321</li>
+                    <li>support@foodshop.vn</li>
+                    <li>08:00 - 22:00</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2024 FoodShop. All rights reserved.
+        </div>
+    </footer>
+    <script src="JS/main_user.js"></script>
+</body>
+</html>
